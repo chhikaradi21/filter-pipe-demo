@@ -8,7 +8,7 @@ import { FilterPipe } from './filter.pipe';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  selectedField = 'name';
+
   dataArr = [
     {
       name : 'Aditya',
@@ -77,13 +77,5 @@ export class AppComponent {
   }
 
   // filter code ends here
-
-  setFieldName(name) {
-    if (this.selectedField === name) {
-      this.selectedField = '-' + this.selectedField;
-    } else {
-      this.selectedField = name;
-    }
-  }
 
 }
