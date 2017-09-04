@@ -8,7 +8,6 @@ import { FilterPipe } from './filter.pipe';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
   selectedField = 'name';
   dataArr = [
     {
