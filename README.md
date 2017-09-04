@@ -278,6 +278,10 @@ Follow these steps
 4. ng serve
 5. Access in browser at port 4200 (localhost:4200)
 
+### Working Demo
+<a href="https://www.adityachhikara.me/github-demos?block=filter-pipe">See Filter Demo</a>
+
+
 
 ## Further help
 1. This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.2.
