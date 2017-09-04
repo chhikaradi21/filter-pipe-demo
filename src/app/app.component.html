@@ -1,0 +1,72 @@
+<div class="container">
+  <div class="row">
+
+    <div class="col-md-12 text-center">
+      <h1><span class="badge badge-secondary" style="font-size : 30px; margin-bottom : 30px">Table Filter Demo</span></h1>
+    </div>
+
+    <div class="col-md-12">
+
+        <div class="row">
+            <div class="col-md-2">
+                <input type="text" class="form-control" placeholder="enter person name" [(ngModel)]="customFilterObj.normal.name">
+            </div>
+
+            <div class="col-md-2">
+                <input type="text" class="form-control" placeholder="enter city name" [(ngModel)]="customFilterObj.normal.city">
+            </div>
+
+          <div class="col-md-2">
+            <input type="text" class="form-control" placeholder="enter mobile" [(ngModel)]="customFilterObj.normal.mobile">
+          </div>
+
+        </div>
+
+        <div class="row" style="margin-top : 20px">
+          <div class="col-md-2">
+            <input type="number" class="form-control" placeholder="enter start age" [(ngModel)]="customFilterObj.range.age.start">
+          </div>
+
+          <div class="col-md-2">
+            <input type="number" class="form-control" placeholder="enter end age" [(ngModel)]="customFilterObj.range.age.end">
+          </div>
+
+        </div>
+
+        <div class="row" style="margin-top : 20px">
+
+          <div class="col-md-2">
+            <button type="button" class="btn btn-warning" (click)="resetFilters()">Reset Filters</button>
+          </div>
+
+        </div>
+
+
+
+    </div>
+
+    <div class="col-md-12" >
+      <table class="table">
+        <thead>
+        <tr>
+          <th (click)="setFieldName('name')">Name</th>
+          <th (click)="setFieldName('city')">City</th>
+          <th (click)="setFieldName('mobile')">Mobile</th>
+          <th (click)="setFieldName('age')">Age</th>
+          <th (click)="setFieldName('dob')">DOB</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let item of dataArr | filter : customFilterObj">
+          <td>{{item.name}}</td>
+          <td>{{item.city}}</td>
+          <td>{{item.mobile}}</td>
+          <td>{{item.age}}</td>
+          <td>{{item.dob | date:'dd-MMM-y'}}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</div>
