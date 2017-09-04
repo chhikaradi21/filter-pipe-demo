@@ -279,7 +279,7 @@ Follow these steps
 5. Access in browser at port 4200 (localhost:4200)
 
 ### Working Demo
-<a href="https://www.adityachhikara.me/github-demos?block=filter-pipe">See Filter Demo</a>
+<a href="https://www.adityachhikara.me/github-demos?block=filter-pipe" target="_blank">See Filter Demo</a>
 
 
 
